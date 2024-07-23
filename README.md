@@ -3,7 +3,9 @@
 [![build](https://github.com/hlaueriksson/Community.PowerToys.Run.Plugin.Templates/actions/workflows/build.yml/badge.svg)](https://github.com/hlaueriksson/Community.PowerToys.Run.Plugin.Templates/actions/workflows/build.yml)
 [![Community.PowerToys.Run.Plugin.Templates](https://img.shields.io/nuget/v/Community.PowerToys.Run.Plugin.Templates.svg?label=Community.PowerToys.Run.Plugin.Templates)](https://www.nuget.org/packages/Community.PowerToys.Run.Plugin.Templates)
 
-This dotnet new template simplifies creating PowerToys Run Plugin projects.
+These `dotnet new` templates simplifies creating PowerToys Run plugin projects and solutions.
+
+![dotnet new list PowerToys](https://raw.githubusercontent.com/hlaueriksson/Community.PowerToys.Run.Plugin.Templates/main/terminal.png)
 
 ## Installation
 
@@ -30,53 +32,44 @@ dotnet new uninstall Community.PowerToys.Run.Plugin.Templates
 Help:
 
 ```cmd
-dotnet new ptrun --help
+dotnet new ptrun-sln --help
+dotnet new ptrun-proj --help
 ```
 
-Create a project in the output directory `MyPlugin` and with the name `MyPlugin`:
+Create a solution in the output directory `MyPlugin`:
 
 ```cmd
-dotnet new ptrun -o MyPlugin -n MyPlugin
+dotnet new ptrun-sln -o MyPlugin
 ```
 
-Create a project in the output directory `MyPlugin`:
-
-```cmd
-dotnet new ptrun -o MyPlugin
-```
-
-Create a directory and then a project:
+Create a directory and then a solution:
 
 ```cmd
 mkdir MyPlugin
 cd MyPlugin
-dotnet new ptrun
+dotnet new ptrun-sln
 ```
 
-Create a solution and add projects:
+Create a project in the output directory `Community.PowerToys.Run.Plugin.MyPlugin`:
 
 ```cmd
-dotnet new sln
-dotnet sln add (ls -r **/*.csproj)
+dotnet new ptrun-proj -o Community.PowerToys.Run.Plugin.MyPlugin
 ```
 
 Plugin author:
 
 ```cmd
-dotnet new ptrun --plugin-author octocat
-```
-
-Test project:
-
-```cmd
-dotnet new ptrun --test-project false
+dotnet new ptrun-sln --plugin-author octocat
 ```
 
 ## Output
 
+With `ptrun-sln`:
+
 ```
 MyPlugin
-|
+|   MyPlugin.sln
+|   
 +---Community.PowerToys.Run.Plugin.MyPlugin
 |   |   Community.PowerToys.Run.Plugin.MyPlugin.csproj
 |   |   Main.cs
@@ -91,8 +84,21 @@ MyPlugin
         MainTests.cs
 ```
 
-![MyPlugin](https://raw.githubusercontent.com/hlaueriksson/Community.PowerToys.Run.Plugin.Templates/main/vs.png)
+![Visual Studio](https://raw.githubusercontent.com/hlaueriksson/Community.PowerToys.Run.Plugin.Templates/main/vs.png)
+
+With `ptrun-proj`:
+
+```
+Community.PowerToys.Run.Plugin.MyPlugin
+|   Community.PowerToys.Run.Plugin.MyPlugin.csproj
+|   Main.cs
+|   plugin.json
+|   
+\---Images
+        myplugin.dark.png
+        myplugin.light.png
+```
 
 ## Disclaimer
 
-This is not an official Microsoft PowerToys template.
+These are not official Microsoft PowerToys templates.

@@ -4,7 +4,7 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <Title>PowerToys Run Plugin Templates</Title>
     <Authors>Henrik Lau Eriksson</Authors>
-    <Description>This dotnet new template simplifies creating PowerToys Run Plugin projects.</Description>
+    <Description>These dotnet new templates simplifies creating PowerToys Run plugin projects and solutions.</Description>
     <PackageType>Template</PackageType>
     <PackageVersion>0.1</PackageVersion>
     <PackageReleaseNotes>
