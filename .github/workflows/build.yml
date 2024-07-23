@@ -30,9 +30,11 @@ jobs:
     - name: Build
       run: dotnet build --no-restore
 
-    - name: Build template
-      run: dotnet build .\templates\Community.PowerToys.Run.Plugin.Plugin1\ /p:Platform=${{matrix.platform}}
+    - name: Build templates
+      run: |
+        dotnet build .\templates\project\ /p:Platform=${{matrix.platform}}
+        dotnet build .\templates\solution\ /p:Platform=${{matrix.platform}}
 
-    - name: Test template
+    - name: Test templates
       if: ${{matrix.platform == 'x64'}}
-      run: dotnet test .\templates\Community.PowerToys.Run.Plugin.Plugin1.UnitTests\ /p:Platform=${{matrix.platform}}
+      run: dotnet test .\templates\solution\ /p:Platform=${{matrix.platform}}
