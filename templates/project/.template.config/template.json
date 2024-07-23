@@ -5,8 +5,7 @@
         "PowerToys"
     ],
     "identity": "Community.PowerToys.Run.Plugin.Templates.Project",
-    "groupIdentity": "Community.PowerToys.Run.Plugin.Templates",
-    "name": "PowerToys Run plugin project",
+    "name": "PowerToys Run Plugin Project",
     "description": "A template for creating PowerToys Run plugin projects.",
     "shortName": "ptrun-proj",
     "tags": {
