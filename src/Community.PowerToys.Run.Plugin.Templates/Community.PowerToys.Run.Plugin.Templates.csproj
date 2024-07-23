@@ -2,13 +2,20 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <PackageType>Template</PackageType>
-    <PackageVersion>0.1</PackageVersion>
-    <PackageId>Community.PowerToys.Run.Plugin.Templates</PackageId>
     <Title>PowerToys Run Plugin Templates</Title>
     <Authors>Henrik Lau Eriksson</Authors>
-    <Description>PowerToys Run Plugin Project Templates</Description>
-    <PackageTags>dotnet-new;templates;powertoys</PackageTags>
+    <Description>This dotnet new template simplifies creating PowerToys Run Plugin projects.</Description>
+    <PackageType>Template</PackageType>
+    <PackageVersion>0.1</PackageVersion>
+    <PackageReleaseNotes>
+    </PackageReleaseNotes>
+    <PackageId>Community.PowerToys.Run.Plugin.Templates</PackageId>
+    <PackageProjectUrl>https://github.com/hlaueriksson/Community.PowerToys.Run.Plugin.Templates</PackageProjectUrl>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageTags>plugin;plugins;powertoys;microsoft-powertoys;powertoys-run;powertoys-run-plugin</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
 
     <IncludeContentInPack>true</IncludeContentInPack>
     <IncludeBuildOutput>false</IncludeBuildOutput>
@@ -16,6 +23,11 @@
 
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="icon.png" Pack="true" PackagePath="\" />
+    <None Include="README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
 
   <ItemGroup>
     <Content Include="templates\**\*" Exclude="templates\**\bin\**;templates\**\obj\**" />
