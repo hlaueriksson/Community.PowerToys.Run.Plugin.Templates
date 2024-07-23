@@ -1,0 +1,42 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Henrik Lau Eriksson",
+    "classifications": [
+        "PowerToys"
+    ],
+    "identity": "Community.PowerToys.Run.Plugin.Templates.Project",
+    "groupIdentity": "Community.PowerToys.Run.Plugin.Templates",
+    "name": "PowerToys Run plugin project",
+    "description": "A template for creating PowerToys Run plugin projects.",
+    "shortName": "ptrun-proj",
+    "tags": {
+        "language": "C#",
+        "type": "project"
+    },
+    "defaultName": "MyPlugin",
+    "sourceName": "Plugin1",
+    "preferNameDirectory": true,
+    "guids": [
+        "00000000000000000000000000000000"
+    ],
+    "symbols": {
+        "PluginAuthor": {
+            "type": "parameter",
+            "displayName": "Plugin _author",
+            "description": "The author of the plugin.",
+            "replaces": "hlaueriksson"
+        },
+        "Images": {
+            "type": "derived",
+            "datatype": "text",
+            "valueSource": "name",
+            "valueTransform": "ImagesTransform",
+            "fileRename": "plugin1"
+        }
+    },
+    "forms": {
+        "ImagesTransform": {
+            "identifier": "lowerCase"
+        }
+    }
+}

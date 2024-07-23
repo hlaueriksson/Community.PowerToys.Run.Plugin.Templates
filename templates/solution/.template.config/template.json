@@ -2,14 +2,13 @@
     "$schema": "http://json.schemastore.org/template",
     "author": "Henrik Lau Eriksson",
     "classifications": [
-        "Plugin",
         "PowerToys"
     ],
     "identity": "Community.PowerToys.Run.Plugin.Templates.Solution",
     "groupIdentity": "Community.PowerToys.Run.Plugin.Templates",
     "name": "PowerToys Run plugin solution",
     "description": "A template for creating PowerToys Run plugin solutions.",
-    "shortName": "ptrun",
+    "shortName": "ptrun-sln",
     "tags": {
         "language": "C#",
         "type": "solution",
