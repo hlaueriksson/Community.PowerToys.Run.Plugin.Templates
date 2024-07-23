@@ -72,6 +72,27 @@ Test project:
 dotnet new ptrun --test-project false
 ```
 
+## Output
+
+```
+MyPlugin
+|
++---Community.PowerToys.Run.Plugin.MyPlugin
+|   |   Community.PowerToys.Run.Plugin.MyPlugin.csproj
+|   |   Main.cs
+|   |   plugin.json
+|   |   
+|   \---Images
+|           myplugin.dark.png
+|           myplugin.light.png
+|           
+\---Community.PowerToys.Run.Plugin.MyPlugin.UnitTests
+        Community.PowerToys.Run.Plugin.MyPlugin.UnitTests.csproj
+        MainTests.cs
+```
+
+![MyPlugin](https://raw.githubusercontent.com/hlaueriksson/Community.PowerToys.Run.Plugin.Templates/main/vs.png)
+
 ## Disclaimer
 
 This is not an official Microsoft PowerToys template.
