@@ -5,17 +5,24 @@
         "Plugin",
         "PowerToys"
     ],
-    "identity": "Community.PowerToys.Run.Plugin.Templates",
-    "name": "PowerToys Run Plugin",
+    "identity": "Community.PowerToys.Run.Plugin.Templates.Solution",
+    "groupIdentity": "Community.PowerToys.Run.Plugin.Templates",
+    "name": "PowerToys Run plugin solution",
+    "description": "A template for creating PowerToys Run plugin solutions.",
     "shortName": "ptrun",
     "tags": {
         "language": "C#",
-        "type": "project"
+        "type": "solution",
+        "editorTreatAs": "solution"
     },
+    "defaultName": "MyPlugin",
     "sourceName": "Plugin1",
-    "preferNameDirectory": true,
+    "preferNameDirectory": false,
     "guids": [
-        "00000000000000000000000000000000"
+        "00000000000000000000000000000000",
+        "4FE6620B-81F5-4D54-B3F2-1DA89DE801B2",
+        "CEA38081-865E-4E96-9272-B9C8F77A29FB",
+        "8E0BD79D-D49E-47C3-8795-AEDBA16EB234"
     ],
     "symbols": {
         "PluginAuthor": {

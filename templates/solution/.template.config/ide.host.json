@@ -5,12 +5,12 @@
     {
       "id": "PluginAuthor",
       "isVisible": true,
-      "persistenceScope": "shared"
+      "persistenceScope": "templateGroup"
     },
     {
       "id": "TestProject",
       "isVisible": true,
-      "persistenceScope": "shared"
+      "persistenceScope": "templateGroup"
     }
   ]
 }
