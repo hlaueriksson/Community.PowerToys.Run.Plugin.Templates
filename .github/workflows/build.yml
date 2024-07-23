@@ -1,0 +1,38 @@
+name: build
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    strategy:
+      matrix:
+        platform: [x64, ARM64]
+
+    runs-on: windows-latest
+
+    steps:
+
+    - uses: actions/checkout@v4
+
+    - name: Setup dotnet
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: 8.0.x
+
+    - name: Restore dependencies
+      run: dotnet restore
+
+    - name: Build
+      run: dotnet build --no-restore
+
+    - name: Build template
+      run: dotnet build .\src\Community.PowerToys.Run.Plugin.Templates\templates\Community.PowerToys.Run.Plugin.Plugin1\ /p:Platform=${{matrix.platform}}
+
+    - name: Test template
+      if: ${{matrix.platform == 'x64'}}
+      run: dotnet test .\src\Community.PowerToys.Run.Plugin.Templates\templates\Community.PowerToys.Run.Plugin.Plugin1.UnitTests\ /p:Platform=${{matrix.platform}}
