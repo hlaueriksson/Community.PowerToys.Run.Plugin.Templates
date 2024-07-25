@@ -5,7 +5,7 @@ using System.Windows;
 using System.Windows.Input;
 using Wox.Plugin;
 
-namespace Plugin1
+namespace Namespace.Plugin1
 {
     /// <summary>
     /// Main class of this plugin that implement all used interfaces.

@@ -13,7 +13,7 @@
         "type": "project"
     },
     "defaultName": "MyPlugin",
-    "sourceName": "Plugin1",
+    "sourceName": "Namespace.Plugin1",
     "preferNameDirectory": true,
     "guids": [
         "00000000000000000000000000000000"
@@ -25,16 +25,29 @@
             "description": "The author of the plugin.",
             "replaces": "hlaueriksson"
         },
-        "Images": {
+        "PluginName": {
             "type": "derived",
             "datatype": "text",
             "valueSource": "name",
-            "valueTransform": "ImagesTransform",
+            "valueTransform": "PluginNameTransform",
+            "replaces": "Plugin1"
+        },
+        "PluginNameLowerCase": {
+            "type": "derived",
+            "datatype": "text",
+            "valueSource": "PluginName",
+            "valueTransform": "PluginNameLowerCaseTransform",
+            "replaces": "plugin1",
             "fileRename": "plugin1"
         }
     },
     "forms": {
-        "ImagesTransform": {
+        "PluginNameTransform": {
+            "identifier": "replace",
+            "pattern": ".*?\\.",
+            "replacement": ""
+        },
+        "PluginNameLowerCaseTransform": {
             "identifier": "lowerCase"
         }
     }

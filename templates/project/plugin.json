@@ -6,8 +6,8 @@
   "Author": "hlaueriksson",
   "Version": "0.82.1",
   "Language": "csharp",
-  "Website": "https://github.com/hlaueriksson/Plugin1",
-  "ExecuteFileName": "Plugin1.dll",
+  "Website": "https://github.com/hlaueriksson/Namespace.Plugin1",
+  "ExecuteFileName": "Namespace.Plugin1.dll",
   "IcoPathDark": "Images\\plugin1.dark.png",
   "IcoPathLight": "Images\\plugin1.light.png",
   "DynamicLoading": false
