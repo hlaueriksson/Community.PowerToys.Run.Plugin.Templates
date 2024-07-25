@@ -62,6 +62,10 @@ Plugin author:
 dotnet new ptrun-sln --plugin-author octocat
 ```
 
+Visual Studio:
+
+![Visual Studio - Create a new project](https://raw.githubusercontent.com/hlaueriksson/Community.PowerToys.Run.Plugin.Templates/main/vs-new-project.png)
+
 ## Output
 
 With `ptrun-sln`:
