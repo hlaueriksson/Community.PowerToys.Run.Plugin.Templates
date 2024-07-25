@@ -3,7 +3,7 @@
 [![build](https://github.com/hlaueriksson/Community.PowerToys.Run.Plugin.Templates/actions/workflows/build.yml/badge.svg)](https://github.com/hlaueriksson/Community.PowerToys.Run.Plugin.Templates/actions/workflows/build.yml)
 [![Community.PowerToys.Run.Plugin.Templates](https://img.shields.io/nuget/v/Community.PowerToys.Run.Plugin.Templates.svg?label=Community.PowerToys.Run.Plugin.Templates)](https://www.nuget.org/packages/Community.PowerToys.Run.Plugin.Templates)
 
-These `dotnet new` templates simplifies creating PowerToys Run plugin projects and solutions.
+These `dotnet new` templates simplify creating PowerToys Run plugin projects and solutions.
 
 ![dotnet new list PowerToys](https://raw.githubusercontent.com/hlaueriksson/Community.PowerToys.Run.Plugin.Templates/main/terminal.png)
 
