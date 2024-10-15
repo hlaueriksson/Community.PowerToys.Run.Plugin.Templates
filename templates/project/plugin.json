@@ -1,5 +1,5 @@
 {
-  "ID": "00000000000000000000000000000000",
+  "ID": "PLUGINID_FROM_TEMPLATE",
   "ActionKeyword": "plugin1",
   "IsGlobal": false,
   "Name": "Plugin1",

@@ -15,7 +15,7 @@ namespace Community.PowerToys.Run.Plugin.Plugin1
         /// <summary>
         /// ID of the plugin.
         /// </summary>
-        public static string PluginID => "00000000000000000000000000000000";
+        public static string PluginID => "PLUGINID_FROM_TEMPLATE";
 
         /// <summary>
         /// Name of the plugin.

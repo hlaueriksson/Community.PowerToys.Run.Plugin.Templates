@@ -6,7 +6,7 @@
     <Authors>Henrik Lau Eriksson</Authors>
     <Description>These dotnet new templates simplify creating PowerToys Run plugin projects and solutions.</Description>
     <PackageType>Template</PackageType>
-    <PackageVersion>0.1.0</PackageVersion>
+    <PackageVersion>0.2.0</PackageVersion>
     <PackageReleaseNotes>Initial release</PackageReleaseNotes>
     <PackageId>Community.PowerToys.Run.Plugin.Templates</PackageId>
     <PackageProjectUrl>https://github.com/hlaueriksson/Community.PowerToys.Run.Plugin.Templates</PackageProjectUrl>

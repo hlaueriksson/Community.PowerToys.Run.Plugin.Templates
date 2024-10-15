@@ -15,9 +15,6 @@
     "defaultName": "MyPlugin",
     "sourceName": "Namespace.Plugin1",
     "preferNameDirectory": true,
-    "guids": [
-        "00000000000000000000000000000000"
-    ],
     "symbols": {
         "PluginAuthor": {
             "type": "parameter",
@@ -39,6 +36,14 @@
             "valueTransform": "PluginNameLowerCaseTransform",
             "replaces": "plugin1",
             "fileRename": "plugin1"
+        },
+        "PluginId": {
+          "type": "generated",
+          "generator": "guid",
+          "parameters": {
+            "defaultFormat": "N"
+          },
+          "replaces": "PLUGINID_FROM_TEMPLATE"
         }
     },
     "forms": {
