@@ -32,9 +32,9 @@ jobs:
 
     - name: Build templates
       run: |
-        dotnet build .\templates\project\ /p:Platform=${{matrix.platform}}
-        dotnet build .\templates\solution\ /p:Platform=${{matrix.platform}}
+        dotnet build .\src\templates\project\ /p:Platform=${{matrix.platform}}
+        dotnet build .\src\templates\solution\ /p:Platform=${{matrix.platform}}
 
     - name: Test templates
       if: ${{matrix.platform == 'x64'}}
-      run: dotnet test .\templates\solution\ /p:Platform=${{matrix.platform}}
+      run: dotnet test .\src\templates\solution\ /p:Platform=${{matrix.platform}}

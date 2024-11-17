@@ -1,2 +1,2 @@
 dotnet new uninstall Community.PowerToys.Run.Plugin.Templates
-dotnet new install .\templates\ --force
+dotnet new install .\src\templates\ --force
