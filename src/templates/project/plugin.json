@@ -4,7 +4,7 @@
   "IsGlobal": false,
   "Name": "Plugin1",
   "Author": "hlaueriksson",
-  "Version": "0.82.1",
+  "Version": "0.86.0",
   "Language": "csharp",
   "Website": "https://github.com/hlaueriksson/Namespace.Plugin1",
   "ExecuteFileName": "Namespace.Plugin1.dll",
