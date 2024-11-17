@@ -4,7 +4,7 @@
   "IsGlobal": false,
   "Name": "MyProject",
   "Author": "hlaueriksson",
-  "Version": "0.82.1",
+  "Version": "0.86.0",
   "Language": "csharp",
   "Website": "https://github.com/hlaueriksson/MyProject",
   "ExecuteFileName": "MyProject.dll",
