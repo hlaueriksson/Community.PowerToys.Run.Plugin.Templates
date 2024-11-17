@@ -1,0 +1,14 @@
+﻿{
+  "ID": "A2CB0EB95AFB45FFA2F32FFCAB923FC7",
+  "ActionKeyword": "mysolution",
+  "IsGlobal": false,
+  "Name": "MySolution",
+  "Author": "hlaueriksson",
+  "Version": "0.82.1",
+  "Language": "csharp",
+  "Website": "https://github.com/hlaueriksson/Community.PowerToys.Run.Plugin.MySolution",
+  "ExecuteFileName": "Community.PowerToys.Run.Plugin.MySolution.dll",
+  "IcoPathDark": "Images\\mysolution.dark.png",
+  "IcoPathLight": "Images\\mysolution.light.png",
+  "DynamicLoading": false
+}

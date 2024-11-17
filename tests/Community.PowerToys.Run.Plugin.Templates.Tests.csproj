@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentAssertions" Version="6.12.2" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.11.1" />
+    <PackageReference Include="NUnit" Version="4.2.2" />
+    <PackageReference Include="NUnit3TestAdapter" Version="4.6.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Verify.NUnit" Version="28.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\src\Community.PowerToys.Run.Plugin.Templates.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="IntegrationTests.ptrun_sln\**" />
+    <Compile Remove="IntegrationTests.ptrun_proj\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="IntegrationTests.ptrun_sln\**" />
+    <EmbeddedResource Remove="IntegrationTests.ptrun_proj\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="IntegrationTests.ptrun_sln\**" />
+    <None Remove="IntegrationTests.ptrun_proj\**" />
+  </ItemGroup>
+
+</Project>
