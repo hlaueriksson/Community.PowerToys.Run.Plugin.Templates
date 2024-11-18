@@ -21,18 +21,21 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Remove="IntegrationTests.ptrun_sln\**" />
     <Compile Remove="IntegrationTests.ptrun_proj\**" />
+    <Compile Remove="IntegrationTests.ptrun_scripts\**" />
+    <Compile Remove="IntegrationTests.ptrun_sln\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Remove="IntegrationTests.ptrun_sln\**" />
     <EmbeddedResource Remove="IntegrationTests.ptrun_proj\**" />
+    <EmbeddedResource Remove="IntegrationTests.ptrun_scripts\**" />
+    <EmbeddedResource Remove="IntegrationTests.ptrun_sln\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="IntegrationTests.ptrun_sln\**" />
     <None Remove="IntegrationTests.ptrun_proj\**" />
+    <None Remove="IntegrationTests.ptrun_scripts\**" />
+    <None Remove="IntegrationTests.ptrun_sln\**" />
   </ItemGroup>
 
 </Project>

@@ -37,6 +37,18 @@ public class IntegrationTests
         return VerifyDirectory(output);
     }
 
+    [Test]
+    public Task ptrun_scripts()
+    {
+        var output = "MyScripts";
+        Delete(output);
+        var result = RunProcess(@$"dotnet new ptrun-scripts -o {output} --debug:custom-hive hive");
+
+        result.ExitCode.Should().Be(0);
+        Directory.Exists(output).Should().BeTrue("Output directory was not created.");
+        return VerifyDirectory(output);
+    }
+
     private static void Delete(string path)
     {
         if (Directory.Exists(path))
