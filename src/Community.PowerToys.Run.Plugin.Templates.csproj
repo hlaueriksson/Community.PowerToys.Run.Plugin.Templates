@@ -21,6 +21,7 @@
     <ContentTargetFolders>content</ContentTargetFolders>
 
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <NoWarn>$(NoWarn);NU5110;NU5111;NU5128</NoWarn>
   </PropertyGroup>
 
   <ItemGroup>
