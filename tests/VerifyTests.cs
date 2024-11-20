@@ -1,9 +1,12 @@
 using System.Diagnostics;
+using System.Text.RegularExpressions;
+using System.Text;
 using FluentAssertions;
 
 namespace Community.PowerToys.Run.Plugin.Templates.Tests;
 
-public class IntegrationTests
+[Category("Integration")]
+public class VerifyTests
 {
     [SetUp]
     public void Setup()
@@ -22,7 +25,22 @@ public class IntegrationTests
 
         result.ExitCode.Should().Be(0);
         Directory.Exists(output).Should().BeTrue("Output directory was not created.");
-        return VerifyDirectory(output);
+        return VerifyDirectory(output,
+            fileScrubber: (path, builder) =>
+            {
+                if (Path.GetFileName(path) == "MySolution.sln")
+                {
+                    Replace(builder, @"\{[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}\}", "{00000000-0000-0000-0000-000000000000}");
+                }
+                if (Path.GetFileName(path) == "Main.cs")
+                {
+                    Replace(builder, "PluginID => \".*\";", "PluginID => \"00000000000000000000000000000000\";");
+                }
+                if (Path.GetFileName(path) == "plugin.json")
+                {
+                    Replace(builder, "\"ID\": \".*\",", "\"ID\": \"00000000000000000000000000000000\",");
+                }
+            });
     }
 
     [Test]
@@ -34,7 +52,18 @@ public class IntegrationTests
 
         result.ExitCode.Should().Be(0);
         Directory.Exists(output).Should().BeTrue("Output directory was not created.");
-        return VerifyDirectory(output);
+        return VerifyDirectory(output,
+            fileScrubber: (path, builder) =>
+            {
+                if (Path.GetFileName(path) == "Main.cs")
+                {
+                    Replace(builder, "PluginID => \".*\";", "PluginID => \"00000000000000000000000000000000\";");
+                }
+                if (Path.GetFileName(path) == "plugin.json")
+                {
+                    Replace(builder, "\"ID\": \".*\",", "\"ID\": \"00000000000000000000000000000000\",");
+                }
+            });
     }
 
     [Test]
@@ -80,4 +109,11 @@ public class IntegrationTests
     }
 
     private record ProcessResult(int ExitCode, string Output, string Error);
+
+    private void Replace(StringBuilder builder, string pattern, string replacement)
+    {
+        var result = Regex.Replace(builder.ToString(), pattern, replacement);
+        builder.Clear();
+        builder.Append(result);
+    }
 }

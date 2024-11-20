@@ -15,7 +15,7 @@ namespace Community.PowerToys.Run.Plugin.MySolution
         /// <summary>
         /// ID of the plugin.
         /// </summary>
-        public static string PluginID => "A2CB0EB95AFB45FFA2F32FFCAB923FC7";
+        public static string PluginID => "00000000000000000000000000000000";
 
         /// <summary>
         /// Name of the plugin.

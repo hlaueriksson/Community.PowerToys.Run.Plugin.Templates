@@ -15,7 +15,7 @@ namespace MyProject
         /// <summary>
         /// ID of the plugin.
         /// </summary>
-        public static string PluginID => "0847267B14FF4C9FA9782EEDCCE64F81";
+        public static string PluginID => "00000000000000000000000000000000";
 
         /// <summary>
         /// Name of the plugin.
