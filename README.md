@@ -34,6 +34,7 @@ Help:
 ```cmd
 dotnet new ptrun-sln --help
 dotnet new ptrun-proj --help
+dotnet new ptrun-scripts --help
 ```
 
 Create a solution in the output directory `MyPlugin`:
@@ -60,6 +61,12 @@ Plugin author:
 
 ```cmd
 dotnet new ptrun-sln --plugin-author octocat
+```
+
+Create scripts in the current directory:
+
+```cmd
+dotnet new ptrun-scripts
 ```
 
 Visual Studio:
@@ -101,6 +108,15 @@ Community.PowerToys.Run.Plugin.MyPlugin
 \---Images
         myplugin.dark.png
         myplugin.light.png
+```
+
+With `ptrun-scripts`:
+
+```
+Community.PowerToys.Run.Plugin.MyPlugin
+|   deploy.ps1
+|   pack.ps1
+|   releasenotes.ps1
 ```
 
 ## Disclaimer
