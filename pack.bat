@@ -1,1 +1,1 @@
-dotnet build -c Release
+dotnet build .\src -c Release
