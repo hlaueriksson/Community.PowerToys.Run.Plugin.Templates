@@ -6,7 +6,7 @@
     <Authors>Henrik Lau Eriksson</Authors>
     <Description>These dotnet new templates simplify creating PowerToys Run plugin projects and solutions.</Description>
     <PackageType>Template</PackageType>
-    <PackageVersion>0.2.0</PackageVersion>
+    <PackageVersion>0.3.0</PackageVersion>
     <PackageReleaseNotes>
 - Change target framework to net9.0-windows10.0.22621.0
 - Bump Community.PowerToys.Run.Plugin.Dependencies to 0.87.0
