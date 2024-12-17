@@ -1,19 +1,19 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net9.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="FluentAssertions" Version="6.12.2" />
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.11.1" />
-    <PackageReference Include="NUnit" Version="4.2.2" />
+    <PackageReference Include="FluentAssertions" Version="7.0.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.12.0" />
+    <PackageReference Include="NUnit" Version="4.3.0" />
     <PackageReference Include="NUnit3TestAdapter" Version="4.6.0">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Verify.NUnit" Version="28.3.1" />
+    <PackageReference Include="Verify.NUnit" Version="28.6.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -21,21 +21,21 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Remove="IntegrationTests.ptrun_proj\**" />
-    <Compile Remove="IntegrationTests.ptrun_scripts\**" />
-    <Compile Remove="IntegrationTests.ptrun_sln\**" />
+    <Compile Remove="VerifyTests.ptrun_proj\**" />
+    <Compile Remove="VerifyTests.ptrun_scripts\**" />
+    <Compile Remove="VerifyTests.ptrun_sln\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Remove="IntegrationTests.ptrun_proj\**" />
-    <EmbeddedResource Remove="IntegrationTests.ptrun_scripts\**" />
-    <EmbeddedResource Remove="IntegrationTests.ptrun_sln\**" />
+    <EmbeddedResource Remove="VerifyTests.ptrun_proj\**" />
+    <EmbeddedResource Remove="VerifyTests.ptrun_scripts\**" />
+    <EmbeddedResource Remove="VerifyTests.ptrun_sln\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="IntegrationTests.ptrun_proj\**" />
-    <None Remove="IntegrationTests.ptrun_scripts\**" />
-    <None Remove="IntegrationTests.ptrun_sln\**" />
+    <None Remove="VerifyTests.ptrun_proj\**" />
+    <None Remove="VerifyTests.ptrun_scripts\**" />
+    <None Remove="VerifyTests.ptrun_sln\**" />
   </ItemGroup>
 
 </Project>
