@@ -1,7 +1,9 @@
 # Community.PowerToys.Run.Plugin.Templates
 
 [![build](https://github.com/hlaueriksson/Community.PowerToys.Run.Plugin.Templates/actions/workflows/build.yml/badge.svg)](https://github.com/hlaueriksson/Community.PowerToys.Run.Plugin.Templates/actions/workflows/build.yml)
+[![Snyk Security Scan](https://github.com/hlaueriksson/Community.PowerToys.Run.Plugin.Templates/actions/workflows/snyk.yml/badge.svg)](https://github.com/hlaueriksson/Community.PowerToys.Run.Plugin.Templates/actions/workflows/snyk.yml)
 [![Community.PowerToys.Run.Plugin.Templates](https://img.shields.io/nuget/v/Community.PowerToys.Run.Plugin.Templates.svg?label=Community.PowerToys.Run.Plugin.Templates)](https://www.nuget.org/packages/Community.PowerToys.Run.Plugin.Templates)
+[![Mentioned in Awesome PowerToys Run Plugins](https://awesome.re/mentioned-badge.svg)](https://github.com/hlaueriksson/awesome-powertoys-run-plugins)
 
 These `dotnet new` templates simplify creating PowerToys Run plugin projects and solutions.
 
