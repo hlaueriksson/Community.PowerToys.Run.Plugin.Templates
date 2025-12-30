@@ -1,5 +1,23 @@
 # Community.PowerToys.Run.Plugin.Templates
 
+TODO:
+
+actions:
+- https://github.com/neilenns/Community.PowerToys.Run.Plugin.CrcLauncher/blob/main/.github/actions/build-zip-lint/action.yml
+
+tests:
+- validate args
+
+IPluginI18n
+IDelayedExecutionPlugin
+ISettingProvider
+ISavable
+IReloadable
+
+https://github.com/dotnet/templating/blob/main/docs/authoring-tools/Authoring-Tools.md
+
+C:\temp\src\MyPlugin> tree /f /a > output.txt
+
 [![build](https://github.com/hlaueriksson/Community.PowerToys.Run.Plugin.Templates/actions/workflows/build.yml/badge.svg)](https://github.com/hlaueriksson/Community.PowerToys.Run.Plugin.Templates/actions/workflows/build.yml)
 [![Snyk Security Scan](https://github.com/hlaueriksson/Community.PowerToys.Run.Plugin.Templates/actions/workflows/snyk.yml/badge.svg)](https://github.com/hlaueriksson/Community.PowerToys.Run.Plugin.Templates/actions/workflows/snyk.yml)
 [![Community.PowerToys.Run.Plugin.Templates](https://img.shields.io/nuget/v/Community.PowerToys.Run.Plugin.Templates.svg?label=Community.PowerToys.Run.Plugin.Templates)](https://www.nuget.org/packages/Community.PowerToys.Run.Plugin.Templates)
