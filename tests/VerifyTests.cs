@@ -28,10 +28,6 @@ public class VerifyTests
         return VerifyDirectory(output,
             fileScrubber: (path, builder) =>
             {
-                if (Path.GetFileName(path) == "MySolution.sln")
-                {
-                    Replace(builder, @"\{[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}\}", "{00000000-0000-0000-0000-000000000000}");
-                }
                 if (Path.GetFileName(path) == "Main.cs")
                 {
                     Replace(builder, "PluginID => \".*\";", "PluginID => \"00000000000000000000000000000000\";");
