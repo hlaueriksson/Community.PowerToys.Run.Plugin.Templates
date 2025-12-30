@@ -8,7 +8,7 @@
     <PackageType>Template</PackageType>
     <PackageVersion>0.3.0</PackageVersion>
     <PackageReleaseNotes>
-- Change target framework to net9.0-windows10.0.22621.0
+- Change target framework to net9.0-windows10.0.26100.0
 - Bump Community.PowerToys.Run.Plugin.Dependencies to 0.96.1
     </PackageReleaseNotes>
     <PackageId>Community.PowerToys.Run.Plugin.Templates</PackageId>
