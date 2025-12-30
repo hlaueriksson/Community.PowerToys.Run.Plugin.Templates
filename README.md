@@ -81,17 +81,17 @@ With `ptrun-sln`:
 
 ```
 MyPlugin
-|   MyPlugin.sln
-|   
+|   MyPlugin.slnx
+|
 +---Community.PowerToys.Run.Plugin.MyPlugin
 |   |   Community.PowerToys.Run.Plugin.MyPlugin.csproj
 |   |   Main.cs
 |   |   plugin.json
-|   |   
+|   |
 |   \---Images
 |           myplugin.dark.png
 |           myplugin.light.png
-|           
+|
 \---Community.PowerToys.Run.Plugin.MyPlugin.UnitTests
         Community.PowerToys.Run.Plugin.MyPlugin.UnitTests.csproj
         MainTests.cs
@@ -106,7 +106,7 @@ Community.PowerToys.Run.Plugin.MyPlugin
 |   Community.PowerToys.Run.Plugin.MyPlugin.csproj
 |   Main.cs
 |   plugin.json
-|   
+|
 \---Images
         myplugin.dark.png
         myplugin.light.png
