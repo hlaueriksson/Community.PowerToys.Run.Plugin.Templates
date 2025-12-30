@@ -87,8 +87,8 @@ public class Main : IPlugin, IContextMenu, IDisposable
                 {
                     PluginName = Name,
                     Title = "Copy to clipboard (Ctrl+C)",
-                    FontFamily = "Segoe MDL2 Assets",
                     Glyph = "\xE8C8", // Copy
+                    FontFamily = "Segoe Fluent Icons,Segoe MDL2 Assets",
                     AcceleratorKey = Key.C,
                     AcceleratorModifiers = ModifierKeys.Control,
                     Action = _ =>
