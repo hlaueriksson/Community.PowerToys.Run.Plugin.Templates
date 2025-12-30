@@ -1,5 +1,5 @@
 <#PSScriptInfo
-.VERSION 0.87.0
+.VERSION 0.96.1
 .GUID 2d1e62b4-4b98-4fad-98b2-2cc1db4694b8
 .AUTHOR Henrik Lau Eriksson
 .COMPANYNAME

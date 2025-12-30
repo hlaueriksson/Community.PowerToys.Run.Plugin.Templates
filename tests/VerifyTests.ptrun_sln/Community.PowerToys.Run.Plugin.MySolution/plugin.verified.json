@@ -4,7 +4,7 @@
   "IsGlobal": false,
   "Name": "MySolution",
   "Author": "hlaueriksson",
-  "Version": "0.87.0",
+  "Version": "0.96.1",
   "Language": "csharp",
   "Website": "https://github.com/hlaueriksson/Community.PowerToys.Run.Plugin.MySolution",
   "ExecuteFileName": "Community.PowerToys.Run.Plugin.MySolution.dll",
