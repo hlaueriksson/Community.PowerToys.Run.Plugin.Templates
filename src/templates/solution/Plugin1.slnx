@@ -1,0 +1,14 @@
+<Solution>
+  <Configurations>
+    <Platform Name="ARM64" />
+    <Platform Name="x64" />
+  </Configurations>
+  <Project Path="Community.PowerToys.Run.Plugin.Plugin1.UnitTests/Community.PowerToys.Run.Plugin.Plugin1.UnitTests.csproj">
+    <Platform Solution="*|ARM64" Project="ARM64" />
+    <Platform Solution="*|x64" Project="x64" />
+  </Project>
+  <Project Path="Community.PowerToys.Run.Plugin.Plugin1/Community.PowerToys.Run.Plugin.Plugin1.csproj">
+    <Platform Solution="*|ARM64" Project="ARM64" />
+    <Platform Solution="*|x64" Project="x64" />
+  </Project>
+</Solution>

@@ -17,10 +17,7 @@
     "sourceName": "Plugin1",
     "preferNameDirectory": false,
     "guids": [
-        "00000000000000000000000000000000",
-        "4FE6620B-81F5-4D54-B3F2-1DA89DE801B2",
-        "CEA38081-865E-4E96-9272-B9C8F77A29FB",
-        "8E0BD79D-D49E-47C3-8795-AEDBA16EB234"
+        "00000000000000000000000000000000"
     ],
     "symbols": {
         "PluginAuthor": {
